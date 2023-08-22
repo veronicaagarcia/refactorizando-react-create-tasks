@@ -1,0 +1,41 @@
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--light-primary-color);
+  display: flex;
+  justify-content: space-evenly;
+  border:red solid 2px
+}
+
+:root{
+  --primary-color: #683aff;
+  --secondary-color: #ffdf91;
+  --light-primary-color:#a88bbe;
+  --white: #edf2fa;
+  --black: #2f2e2e;
+  --font: 1.8rem;
+  --font-titles-h1: 3.3rem;
+  --font-titles-h2: 2rem;
+  --font-family: 'Nanum Gothic Coding', monospace;
+  --font-family-titles: 'Pangolin', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
