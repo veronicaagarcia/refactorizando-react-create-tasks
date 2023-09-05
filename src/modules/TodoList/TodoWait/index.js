@@ -1,5 +1,5 @@
-import './TodoWait.css';
 import React from 'react';
+import './TodoWait.css';
 
 function TodoWait () {
     return (

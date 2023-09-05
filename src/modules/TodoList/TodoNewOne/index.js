@@ -1,9 +1,9 @@
-import './TodoNewOne.css';
 import React from 'react';
+import './TodoNewOne.css';
 
 function TodoNewOne () {
     return (
-        <p> No hay tareas pendientes. Puedes escribir una nueva.</p>
+        <p className='TodoNewOne'> No hay tareas pendientes. Puedes escribir una nueva.</p>
     )
 };
 

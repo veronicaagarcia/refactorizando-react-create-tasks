@@ -1,0 +1,12 @@
+.TodoCounter {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-left: 1%;
+    padding: 48px;
+    color: #1d1d1d;
+}
+
+.TodoCounter--loading {
+    opacity: 30%;
+}

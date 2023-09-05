@@ -1,12 +1,13 @@
+import './CreateTodoButton.css';
 function TodoButton ({ setOpenModal }) {
     return (
-        <button className="TodoButtonNew" 
+        <button className="CreateTodoButton" 
             onClick={
                 () => {
                   setOpenModal(state => !state);
                 }
               }
-            >+
+            >Nueva Tarea
         </button>
     )
 };

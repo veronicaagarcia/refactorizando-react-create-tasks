@@ -1,9 +1,9 @@
-import './TodoError.css'; 
 import React from 'react';
+import '../TodoNewOne'; 
 
 function TodoError () {
     return (
-        <p>Ups! disculpa, tenemos un error</p>
+        <p className='TodoNewOne'>Ups! disculpa, tenemos un error</p>
     )
 };
 
