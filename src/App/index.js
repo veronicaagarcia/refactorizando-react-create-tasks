@@ -12,6 +12,7 @@ import { TodoNewOne } from '../modules/TodoList/TodoNewOne';
 import { NoTodoFound } from '../modules/TodoList/NoTodoFound';
 import { Modal } from '../modules/Modal';
 import { ModalForm} from '../modules/Modal/ModalForm';
+import { ChangeAlertWithStorageListener } from '../ChangeAlert/index';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
     loading,
     error,
     addTask,
+    sincronizeItem
   } = useTodos();
   
   return (
@@ -56,15 +58,6 @@ function App() {
         onEmptySearch={() => <NoTodoFound 
           searchValue={searchValue}
         />}
-        // render={todo => (
-        //   <TodoTask
-        //     key={todo.text}
-        //     text={todo.text}
-        //     completed={todo.completed}
-        //     onComplete={() => completeTask(todo.text)}
-        //     onDelete={() => deleteTask(todo.text)}
-        //   />
-        // )}
       >
         {todo => (
           <TodoTask
@@ -85,6 +78,10 @@ function App() {
           /> 
         </Modal> 
       )}
+
+      <ChangeAlertWithStorageListener
+        sincronize={sincronizeItem}
+      />
     </React.Fragment>
   );
 }
